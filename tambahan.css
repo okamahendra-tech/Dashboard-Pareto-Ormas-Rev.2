@@ -1,0 +1,47 @@
+/* @tailwind base;;
+@tailwind components;
+@tailwind utilities; */
+
+.upload-container {
+    position: relative;
+}
+
+.progress-bar {
+    transition: width 0.3s ease-in-out;
+}
+
+#dropZone.drag-over {
+    border-color: #4F46E5;
+    background-color: #EEF2FF;
+}
+
+.file-item {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.status-pending {
+    color: #9CA3AF;
+}
+
+.status-uploading {
+    color: #6366F1;
+}
+
+.status-success {
+    color: #10B981;
+}
+
+.status-error {
+    color: #EF4444;
+}

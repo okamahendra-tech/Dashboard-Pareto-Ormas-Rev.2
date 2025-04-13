@@ -1,0 +1,46 @@
+/* Gambar */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height:234px;
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: white;
+}
+
+.caption h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.caption p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
